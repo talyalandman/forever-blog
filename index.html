@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
@@ -6,45 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forever Living - בריאות מהטבע</title>
     <style>
-        body {
-            font-family: sans-serif;
-            margin: 0;
-            padding: 0;
-            direction: rtl;
-        }
-        header {
-            background-color: #02735E;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .hero {
-            background: #E3F4F4;
-            padding: 60px 20px;
-            text-align: center;
-        }
-        .hero h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-        .hero p {
-            font-size: 1.2em;
-            margin-bottom: 30px;
-        }
-        .hero a {
-            background-color: #FF9F1C;
-            color: white;
-            padding: 12px 24px;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: bold;
-        }
+        body { font-family: sans-serif; margin: 0; padding: 0; direction: rtl; }
+        header { background-color: #02735E; color: white; padding: 20px; text-align: center; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        .hero { background: #E3F4F4; padding: 60px 20px; text-align: center; }
+        .hero h1 { font-size: 2.5em; margin-bottom: 10px; }
+        .hero p { font-size: 1.2em; margin-bottom: 30px; }
+        .hero a { background-color: #FF9F1C; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; }
+        section#products { padding: 40px 20px; background: #fff; text-align: center; }
+        section#products .item { border: 1px solid #ccc; border-radius: 10px; padding: 20px; width: 250px; }
+        section#products .grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; max-width: 1000px; margin: auto; }
+        section#join { background: #f4f4f4; padding: 40px 20px; text-align: center; }
+        section#bloglink { text-align: center; padding: 40px 20px; background: #E3F4F4; }
+        section#bloglink a { background: #02735E; color: white; padding: 14px 26px; border-radius: 8px; text-decoration: none; font-weight: bold; }
     </style>
 </head>
 <body>
@@ -52,7 +25,7 @@
         <h1>Forever Living - בלוג הבריאות שלי</h1>
         <nav>
             <a href="#products">מוצרים מומלצים</a>
-            <a href="#blog">פוסטים אחרונים</a>
+            <a href="blog.html">בלוג</a>
             <a href="https://flpil.co.il/my-account/?agent=67273#">קנה עכשיו</a>
         </nav>
     </header>
@@ -63,64 +36,45 @@
         <a href="https://flpil.co.il/my-account/?agent=67273#">התחל עכשיו</a>
     </section>
 
-<!-- Join and Save Section -->
-<section style="background:#f4f4f4; padding:40px 20px; text-align:center;">
-    <h2>הצטרפו עכשיו וקבלו 5% הנחה!</h2>
-    <p>השאירו אימייל ונשלח לכם קישור לפתיחת חשבון עם ההנחה כבר בפנים.</p>
-    <form onsubmit="window.location.href='https://flpil.co.il/my-account/?agent=67273#'; return false;" style="max-width:400px; margin:auto;">
-        <input type="email" placeholder="הכניסו את האימייל שלכם" required
-               style="padding:10px; width:100%; box-sizing:border-box; border:1px solid #ccc; border-radius:4px; margin-bottom:10px;">
-        <button type="submit" 
-                style="background-color:#02735E; color:white; padding:12px 20px; border:none; border-radius:6px; cursor:pointer; width:100%;">
-            קבלו את ההנחה
-        </button>
-    </form>
-</section>
-
-
-<!-- Recommended Products Section -->
-<section id="products" style="padding:40px 20px; background:#fff; text-align:center;">
-    <h2>מוצרים מומלצים</h2>
-    <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:20px; max-width:1000px; margin:auto;">
-
-        <div style="border:1px solid #ccc; border-radius:10px; padding:20px; width:250px;">
-            <h3>Forever Aloe Vera Gel</h3>
-            <p>ג'ל אלוורה טהור לניקוי מערכת העיכול, חיזוק חיסוני וספיגה טובה יותר של תזונה.</p>
-            <a href="https://flpil.co.il/my-account/?agent=67273#" target="_blank" 
-               style="color:white; background:#02735E; padding:10px 16px; text-decoration:none; border-radius:6px; display:inline-block;">
-               לרכישה
-            </a>
+    <section id="products">
+        <h2>מוצרים מומלצים</h2>
+        <div class="grid">
+            <div class="item">
+                <h3>Forever Aloe Vera Gel</h3>
+                <p>ג'ל אלוורה טהור לניקוי מערכת העיכול, חיזוק חיסוני וספיגה טובה יותר של תזונה.</p>
+                <a href="https://flpil.co.il/my-account/?agent=67273#">לרכישה</a>
+            </div>
+            <div class="item">
+                <h3>Forever Bee Propolis</h3>
+                <p>תוסף המבוסס על פרופוליס לחיזוק מערכת החיסון והגנה טבעית.</p>
+                <a href="https://flpil.co.il/my-account/?agent=67273#">לרכישה</a>
+            </div>
+            <div class="item">
+                <h3>Forever Bright Toothgel</h3>
+                <p>ג'ל לצחצוח שיניים מבוסס אלוורה – מנקה, מרענן ומתאים לכל המשפחה.</p>
+                <a href="https://flpil.co.il/my-account/?agent=67273#">לרכישה</a>
+            </div>
+            <div class="item">
+                <h3>Forever Arctic Sea</h3>
+                <p>תוסף אומגה 3 מתקדם – לבריאות הלב, המוח והעיניים.</p>
+                <a href="https://flpil.co.il/my-account/?agent=67273#">לרכישה</a>
+            </div>
         </div>
+    </section>
 
-        <div style="border:1px solid #ccc; border-radius:10px; padding:20px; width:250px;">
-            <h3>Forever Bee Propolis</h3>
-            <p>תוסף המבוסס על פרופוליס לחיזוק מערכת החיסון והגנה טבעית.</p>
-            <a href="https://flpil.co.il/my-account/?agent=67273#" target="_blank" 
-               style="color:white; background:#02735E; padding:10px 16px; text-decoration:none; border-radius:6px; display:inline-block;">
-               לרכישה
-            </a>
-        </div>
+    <section id="join">
+        <h2>הצטרפו עכשיו וקבלו 5% הנחה!</h2>
+        <p>השאירו אימייל ונשלח לכם קישור לפתיחת חשבון עם ההנחה כבר בפנים.</p>
+        <form onsubmit="window.location.href='https://flpil.co.il/my-account/?agent=67273#'; return false;">
+            <input type="email" placeholder="הכניסו את האימייל שלכם" required>
+            <button type="submit">קבלו את ההנחה</button>
+        </form>
+    </section>
 
-        <div style="border:1px solid #ccc; border-radius:10px; padding:20px; width:250px;">
-            <h3>Forever Bright Toothgel</h3>
-            <p>ג'ל לצחצוח שיניים מבוסס אלוורה – מנקה, מרענן ומתאים לכל המשפחה.</p>
-            <a href="https://flpil.co.il/my-account/?agent=67273#" target="_blank" 
-               style="color:white; background:#02735E; padding:10px 16px; text-decoration:none; border-radius:6px; display:inline-block;">
-               לרכישה
-            </a>
-        </div>
-
-        <div style="border:1px solid #ccc; border-radius:10px; padding:20px; width:250px;">
-            <h3>Forever Arctic Sea</h3>
-            <p>תוסף אומגה 3 מתקדם – לבריאות הלב, המוח והעיניים.</p>
-            <a href="https://flpil.co.il/my-account/?agent=67273#" target="_blank" 
-               style="color:white; background:#02735E; padding:10px 16px; text-decoration:none; border-radius:6px; display:inline-block;">
-               לרכישה
-            </a>
-        </div>
-
-    </div>
-</section>
-
+    <section id="bloglink">
+        <h2>רוצים לקרוא עוד המלצות?</h2>
+        <p>היכנסו לבלוג וקבלו השראה מהמוצרים שאני הכי מאמין בהם</p>
+        <a href="blog.html">כניסה לבלוג</a>
+    </section>
 </body>
 </html>
