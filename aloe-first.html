@@ -4,35 +4,73 @@
     <meta charset="UTF-8">
     <title>Aloe First - המלצת השבוע</title>
     <style>
-        body { font-family: sans-serif; margin: 0; padding: 0; direction: rtl; }
-        header { background-color: #02735E; color: white; padding: 20px; text-align: center; }
-        section { max-width: 800px; margin: auto; padding: 20px; }
-        a.button {
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #02735E;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 40px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+        }
+        .image-box img {
+            max-width: 300px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+        }
+        .text-box {
+            max-width: 600px;
+        }
+        .text-box p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+        .button {
             background: #FF9F1C;
             color: white;
             padding: 12px 24px;
             border-radius: 6px;
             text-decoration: none;
             display: inline-block;
-            margin-top: 20px;
+            font-weight: bold;
         }
-        img { max-width: 100%; height: auto; border-radius: 10px; margin-bottom: 20px; }
     </style>
 </head>
 <body>
     <header>
         <h1>Aloe First - המלצת השבוע</h1>
     </header>
-    <section>
-        <img src="https://tse3.mm.bing.net/th?id=OIP.ydyRbwOH8bVnT0vhsNaTTAHaLH&pid=Api" alt="Aloe First">
-        <p>
-        Aloe First הוא תרסיס מבית פוראבר המבוסס על אלוורה, פרופוליס ותמציות צמחים.
-        זהו מוצר חובה בכל בית – להרגעת עור יבש, כוויות קלות, גירויים לאחר גילוח או חשיפה לשמש.
-        </p>
-        <p>
-        אני ממליץ עליו כמעט לכל מטופל – גם כתוספת לטיפולי עור וגם כחלק משגרת היום־יום של טיפול טבעי בעור.
-        </p>
-        <a class="button" href="https://flpil.co.il/my-account/?agent=67273#" target="_blank">לרכישה מיידית</a>
+    <section class="container">
+        <div class="image-box">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.ydyRbwOH8bVnT0vhsNaTTAHaLH&pid=Api" alt="Aloe First">
+        </div>
+        <div class="text-box">
+            <p>
+                Aloe First הוא תרסיס מבית פוראבר המבוסס על אלוורה, פרופוליס ותמציות צמחים.
+                זהו מוצר חובה בכל בית – להרגעת עור יבש, כוויות קלות, גירויים לאחר גילוח או חשיפה לשמש.
+            </p>
+            <p>
+                אני ממליץ עליו כמעט לכל מטופל – גם כתוספת לטיפולי עור וגם כחלק משגרת היום־יום של טיפול טבעי בעור.
+            </p>
+            <a class="button" href="https://flpil.co.il/my-account/?agent=67273#" target="_blank">לרכישה מיידית</a>
+        </div>
     </section>
 </body>
 </html>
