@@ -26,16 +26,31 @@
             border-radius: 12px;
             box-shadow: 0 0 10px rgba(0,0,0,0.05);
         }
+        .split {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            align-items: flex-start;
+        }
+        .image-box {
+            flex: 1 1 300px;
+            min-width: 280px;
+        }
         .image-box img {
             max-width: 100%;
             border-radius: 10px;
             border: 1px solid #ddd;
-            margin-bottom: 20px;
         }
-        .text-box p {
+        .text-box {
+            flex: 2 1 400px;
+        }
+        .text-box p, .full-width p {
             margin-bottom: 20px;
             font-size: 1.1em;
             line-height: 1.8em;
+        }
+        .full-width {
+            margin-top: 30px;
         }
         .button {
             background: #FF9F1C;
@@ -45,6 +60,7 @@
             text-decoration: none;
             display: inline-block;
             font-weight: bold;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -53,20 +69,24 @@
         <h1>Aloe First - המלצת השבוע</h1>
     </header>
     <section class="container">
-        <div class="image-box">
-            <img src="https://tse3.mm.bing.net/th?id=OIP.ydyRbwOH8bVnT0vhsNaTTAHaLH&pid=Api" alt="Aloe First">
+        <div class="split">
+            <div class="image-box">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.ydyRbwOH8bVnT0vhsNaTTAHaLH&pid=Api" alt="Aloe First">
+            </div>
+            <div class="text-box">
+                <p>
+                    Aloe First הוא הרבה יותר מסתם תרסיס – הוא ביטוי מושלם של עקרונות הבריאות הטבעית והרפואה הסינית.
+                    מדובר בתערובת עדינה אך עוצמתית של אלוורה טהורה, פרופוליס דבורים ותמציות צמחים שנבחרו בקפידה,
+                    שתומכת בעור בשעת צורך ומחזקת את יכולת ההחלמה הטבעית של הגוף.
+                </p>
+                <p>
+                    בגישת ההיגיינה הטבעית (Natural Hygiene), עור בריא מתחיל מבפנים – אך חשוב לא פחות לשמור על שגרת טיפול חיצונית שמכבדת את העור,
+                    נמנעת מכימיקלים חריפים, ומעודדת איזון טבעי. Aloe First עושה בדיוק את זה: הוא מרגיע עור מגורה,
+                    מקל על כוויות שמש קלות, ומסייע לשמור על לחות טבעית.
+                </p>
+            </div>
         </div>
-        <div class="text-box">
-            <p>
-                Aloe First הוא הרבה יותר מסתם תרסיס – הוא ביטוי מושלם של עקרונות הבריאות הטבעית והרפואה הסינית.
-                מדובר בתערובת עדינה אך עוצמתית של אלוורה טהורה, פרופוליס דבורים ותמציות צמחים שנבחרו בקפידה,
-                שתומכת בעור בשעת צורך ומחזקת את יכולת ההחלמה הטבעית של הגוף.
-            </p>
-            <p>
-                בגישת ההיגיינה הטבעית (Natural Hygiene), עור בריא מתחיל מבפנים – אך חשוב לא פחות לשמור על שגרת טיפול חיצונית שמכבדת את העור,
-                נמנעת מכימיקלים חריפים, ומעודדת איזון טבעי. Aloe First עושה בדיוק את זה: הוא מרגיע עור מגורה,
-                מקל על כוויות שמש קלות, ומסייע לשמור על לחות טבעית.
-            </p>
+        <div class="full-width">
             <p>
                 ברפואה הסינית, העור מייצג את מצב הריאות והאנרגיה המגינה (Wei Qi) של הגוף.
                 Aloe First משתלב בגישה הזו בזכות תכונותיו המחטאות, המקשרות בין חיזוק מערכת החיסון לבין הגנה פיזית מהירה.
